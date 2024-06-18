@@ -1,5 +1,7 @@
 import logging
+def handle_keystrokes():
 from pynput import keyboard
+#...use keyboard feature here
 import sys
 import signal 
 import time
