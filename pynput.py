@@ -1,8 +1,5 @@
 import logging
-def handle_keystrokes():
-# use keyboard feature here
-from pynput import keyboard # Import here, not at the top
-# use keyboard
+from pynput import keyboard 
 import sys
 import signal 
 import time
